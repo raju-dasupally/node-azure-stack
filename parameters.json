@@ -1,0 +1,12 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sites_azure_oidc_app_name": {
+            "value": null
+        },
+        "serverfarms_appsvc_linux_centralus_basic_externalid": {
+            "value": null
+        }
+    }
+}
