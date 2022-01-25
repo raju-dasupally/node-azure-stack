@@ -80,3 +80,4 @@ jobs:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           resourceGroupName: ${{ env.repo_name }}
           template: ./template.json
+          parameters: ./parameters.json
