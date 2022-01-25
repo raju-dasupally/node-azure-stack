@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "sites_azure_oidc_app_name": {
-            "value": null
+            "value": "<azure-app-name>"
         },
         "serverfarms_appsvc_linux_centralus_basic_externalid": {
             "value": null
