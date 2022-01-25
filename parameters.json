@@ -4,9 +4,6 @@
     "parameters": {
         "sites_azure_oidc_app_name": {
             "value": "<azure-app-service-name>"
-        },
-        "serverfarms_appsvc_linux_centralus_basic_externalid": {
-            "value": null
         }
     }
 }
