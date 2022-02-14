@@ -1,5 +1,4 @@
-[![Use this template](https://github.com/stack-instance/badge.svg)](https://github.com/stack-instance?stack_template_owner=3loka&stack_template_repo=nodejs-azureapp-rel-stack)
-                                  
+            
 
  <p>
     <img src="https://avatars.githubusercontent.com/u/6844498?s=200&v=4" height="20">
@@ -8,7 +7,7 @@
 </p>
 
 
-## Why should you use this GitHub Stack?
+## Why should you use this GitHub template?
 You can spin up your own Express(Node.js) website in seconds. Deployment happens on an Azure App Service.
 
 The stack also sets up a proper Github CI/CD environment by taing care of the following things
@@ -19,7 +18,7 @@ The stack also sets up a proper Github CI/CD environment by taing care of the fo
 
 Note: Once you create a repo out of this stack, you can find your website deployed at <azure_app_name>.azurewebsites.net.
 
-## What are the inputs to pass while setting up the stack?
+## What are the inputs to pass while setting up the template?
 ```
 # Name of the Azure App which has been configured to host the website
 - AZURE_APP_NAME
@@ -28,7 +27,7 @@ Note: Once you create a repo out of this stack, you can find your website deploy
 - AZURE_WEBAPP_PUBLISH_PROFILE
 ```
 
-#### Github apps installed with this stack
+#### Github apps installed with this template
 ```None```
 
 ## How to get AZURE_WEBAPP_PUBLISH_PROFILE? 🔑
