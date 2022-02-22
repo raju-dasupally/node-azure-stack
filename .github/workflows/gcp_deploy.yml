@@ -45,5 +45,7 @@ jobs:
           workload_identity_provider: 'projects/123702878046/locations/global/workloadIdentityPools/github-stacks/providers/github'
           service_account: 'github-stacks@github-stacks-demo.iam.gserviceaccount.com'
 
-      - id: 'deploy'
-        uses: 'google-github-actions/deploy-appengine@v0'
+      - name: 'Deploy to App Engine'
+        run: 'gcloud app deploy app.yaml --quiet --no-promote --version v1'
+#       - id: 'deploy'
+#         uses: 'google-github-actions/deploy-appengine@v0'
