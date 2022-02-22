@@ -40,7 +40,6 @@ jobs:
           rm -rf expressjs-scaffold
       - name: Run npm build
         run: |
-          npm install
           npm run build
 
       - id: 'auth'
