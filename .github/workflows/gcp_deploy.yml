@@ -6,7 +6,7 @@ on:
 jobs:
   deploy: 
     runs-on: ubuntu-latest
-    name: "Deploy nodejs app to Azure"
+    name: "Deploy nodejs app to GCP app engine"
     environment:
        name: development
        url: ${{ steps.get-url.outputs.your_site }}
@@ -34,10 +34,6 @@ jobs:
         run: |
           npm install
           npm run build
-          
-      - name: Read app name from file
-        id: getAppName
-        run: echo "::set-output name=appName::$(cat appname)"
 
       - id: 'auth'
         uses: 'google-github-actions/auth@v0'
