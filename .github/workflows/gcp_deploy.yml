@@ -43,7 +43,7 @@ jobs:
         uses: 'google-github-actions/auth@v0'
         with:
           workload_identity_provider: 'projects/39305491180/locations/global/workloadIdentityPools/node-workload-identity/providers/gh-app-engine'
-          service_account: 'gcp-user@third-wharf-342109.iam.gserviceaccount.com'
+          service_account: 'gcp-app-engine-user@third-wharf-342109.iam.gserviceaccount.com'
           audience: 'https://github.com/raju-dasupally'
 
       - name: 'Deploy to App Engine'
