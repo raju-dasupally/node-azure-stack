@@ -42,8 +42,8 @@ jobs:
       - id: 'auth'
         uses: 'google-github-actions/auth@v0'
         with:
-          workload_identity_provider: 'projects/39305491180/locations/global/workloadIdentityPools/node-workload-identity/providers/gh-app-engine'
-          service_account: 'gcp-user@third-wharf-342109.iam.gserviceaccount.com'
+          workload_identity_provider: 'projects/123702878046/locations/global/workloadIdentityPools/github-stacks/providers/github'
+          service_account: 'github-stacks@github-stacks-demo.iam.gserviceaccount.com'
 
       - id: 'deploy'
         uses: 'google-github-actions/deploy-appengine@v0'
