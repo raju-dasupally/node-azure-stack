@@ -38,9 +38,9 @@ jobs:
           npx express-generator expressjs-scaffold
           cp -r expressjs-scaffold/* .
           rm -rf expressjs-scaffold
-      - name: Run npm build
-        run: |
-          npm run build
+#       - name: Run npm build
+#         run: |
+#           npm run build
 
       - id: 'auth'
         uses: 'google-github-actions/auth@v0'
