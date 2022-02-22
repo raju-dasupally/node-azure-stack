@@ -46,7 +46,7 @@ jobs:
           service_account: 'gcp-app-engine-user@third-wharf-342109.iam.gserviceaccount.com'
           audience: 'https://github.com/raju-dasupally'
 
-      - name: 'Deploy to App Engine'
-        run: 'gcloud app deploy app.yaml --quiet --no-promote --version v1'
-#       - id: 'deploy'
-#         uses: 'google-github-actions/deploy-appengine@v0'
+#       - name: 'Deploy to App Engine'
+#         run: 'gcloud app deploy app.yaml --quiet --no-promote --version v1'
+      - id: 'deploy'
+        uses: 'google-github-actions/deploy-appengine@v0'
