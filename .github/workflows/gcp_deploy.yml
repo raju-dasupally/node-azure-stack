@@ -32,9 +32,13 @@ jobs:
           node-version: '14'
           check-latest: true
           registry-url: https://registry.npmjs.org/
-      
-      - name: npm install, build, and test
-        if: steps.check_files.outputs.files_exists == 'true'
+
+      - name: Stacks framework code generation
+        run: |
+          npx express-generator expressjs-scaffold
+          cp -r expressjs-scaffold/* .
+          rm -rf expressjs-scaffold
+      - name: Run npm build
         run: |
           npm install
           npm run build
