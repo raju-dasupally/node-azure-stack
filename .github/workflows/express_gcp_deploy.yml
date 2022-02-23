@@ -24,6 +24,7 @@ jobs:
     
     - run:  |
         ls -R
+        cd index
           
     - id: 'auth'
       uses: 'google-github-actions/auth@v0'
