@@ -17,17 +17,17 @@ jobs:
   Get_OIDC_ID_token:
     runs-on: ubuntu-latest
     steps:
-       - name: Download a single artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: ${{inputs.index}}
+    - name: Download a single artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: ${{inputs.index}}
           
-       - id: 'auth'
-        uses: 'google-github-actions/auth@v0'
-        with:
-          workload_identity_provider: 'projects/39305491180/locations/global/workloadIdentityPools/node-workload-identity/providers/gh-app-engine'
-          service_account: 'gcp-app-engine-user@third-wharf-342109.iam.gserviceaccount.com'
-          audience: 'https://github.com/raju-dasupally'
+    - id: 'auth'
+      uses: 'google-github-actions/auth@v0'
+      with:
+        workload_identity_provider: 'projects/39305491180/locations/global/workloadIdentityPools/node-workload-identity/providers/gh-app-engine'
+        service_account: 'gcp-app-engine-user@third-wharf-342109.iam.gserviceaccount.com'
+        audience: 'https://github.com/raju-dasupally'
 
-      - id: 'deploy'
-        uses: 'google-github-actions/deploy-appengine@v0'
+    - id: 'deploy'
+      uses: 'google-github-actions/deploy-appengine@v0'
