@@ -23,6 +23,7 @@ jobs:
         name: ${{inputs.index}}
     
     - run:  |
+        ls
         mv ./node-azure-stack/app.yaml .
           
     - id: 'auth'
