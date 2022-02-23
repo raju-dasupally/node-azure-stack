@@ -23,7 +23,7 @@ jobs:
         name: ${{inputs.index}}
     
     - run:  |
-        ls
+        ls -R
           
     - id: 'auth'
       uses: 'google-github-actions/auth@v0'
