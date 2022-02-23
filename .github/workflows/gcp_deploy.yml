@@ -53,3 +53,10 @@ jobs:
 #         run: 'gcloud app deploy app.yaml --quiet --no-promote --version v1'
       - id: 'deploy'
         uses: 'google-github-actions/deploy-appengine@v0'
+        
+      - name: Post deployment Status
+        if: always()
+        uses: tauhid621/post-deployment-status@main
+        env:
+          DEP_URL: ${{ steps.deploy.outputs.url }}
+          SLACK_CHANNEL_SECRET: ${{ SECRETS.SLACK_CHANNEL_SECRET }}
