@@ -11,22 +11,16 @@ on:
 
 permissions:
   id-token: write
+  contents: read
   
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   Get_OIDC_ID_token:
     runs-on: ubuntu-latest
     steps:
-    - name: Download a single artifact
-      uses: actions/download-artifact@v2
-      with:
-        name: ${{inputs.index}}
+    - name: Checkout
+      uses: actions/checkout@v2
     
-    - run:  |
-        cd index
-        ls -R
-        
-          
     - id: 'auth'
       uses: 'google-github-actions/auth@v0'
       with:
