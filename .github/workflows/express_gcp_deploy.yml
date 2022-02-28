@@ -39,6 +39,9 @@ jobs:
         workload_identity_provider: ${{inputs.workload_identity_provider}}
         service_account: ${{inputs.service_account}}
         audience: ${{inputs.audience}}
+    
+    - run: |
+        ls
         
         
 #         workload_identity_provider: 'projects/39305491180/locations/global/workloadIdentityPools/node-workload-identity/providers/gh-app-engine'
