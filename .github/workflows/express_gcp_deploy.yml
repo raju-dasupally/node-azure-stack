@@ -4,9 +4,6 @@ name: Reusable workflow to Deploy Artifacts to GCP App engine
 on:
   workflow_call:
     inputs:
-      index:
-        required: true
-        type: string
       workload_identity_provider:
         type: string
         required: true
