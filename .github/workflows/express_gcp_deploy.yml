@@ -44,11 +44,7 @@ jobs:
     
     - run: |
         ls
-        node --version
-        ENV CLOUDSDK_PYTHON=python3
-        ENV CLOUDSDK_GSUTIL_PYTHON=python3
-        ENV CLOUDSDK_BQ_PYTHON=python3
-        
+        node --version        
         
 #         workload_identity_provider: 'projects/39305491180/locations/global/workloadIdentityPools/node-workload-identity/providers/gh-app-engine'
 #         service_account: 'gcp-app-engine-user@third-wharf-342109.iam.gserviceaccount.com'
