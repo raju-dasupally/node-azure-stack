@@ -29,9 +29,6 @@ configs:
         allow-force-pushes: false
         required-pull-request-reviews:
           dismiss-stale-reviews: true
-    
-github-apps:
-- slug: azure-oidc
 
 init:
  uses: "stack-init.yaml"
