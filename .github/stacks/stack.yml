@@ -23,14 +23,13 @@ configs:
         - expressjs
         - azure
         
-   environments:                                        
-    - name: development
+   branches:
+    - name: main
       parameters: 
-        protected-branches: false
-        allowed-branch-rules:
-          - main
-          - releases/*
-
+        allow-force-pushes: false
+        required-pull-request-reviews:
+          dismiss-stale-reviews: true
+    
 github-apps:
 - slug: azure-oidc
 
