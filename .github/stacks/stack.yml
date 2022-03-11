@@ -1,7 +1,6 @@
 version: 0.1.0   
 
 name: Deploy a Node application to Azure App service
-description: A GitHub Stack to develop, preview, and deploy an Express(Node.js) website to Azure App service in seconds.
 
 branding:
   icon: 'cloud'
