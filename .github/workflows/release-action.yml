@@ -13,13 +13,8 @@ jobs:
   
    
       - name: Running action   
-        uses: ./
+        uses: ruchika-jain/package-action@main
         id: publish-action
         with: 
            semver: '1.0.4'
         
-
-#       - name: Signing action
-#         uses: ruchika-jain/sign-package@1.0.1
-#         with: 
-#           package-name: ${{ steps.publish-action.outputs.package-name }}
