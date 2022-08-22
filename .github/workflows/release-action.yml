@@ -1,0 +1,25 @@
+name: 'build-test'
+on: # rebuild any PRs and main branch changes
+  release:
+    [created]
+  workflow_dispatch:
+
+jobs:
+  test: # make sure the action works on a clean machine without building
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out!
+        uses: actions/checkout@v3
+  
+   
+      - name: Running action   
+        uses: ./
+        id: publish-action
+        with: 
+           semver: '1.0.4'
+        
+
+#       - name: Signing action
+#         uses: ruchika-jain/sign-package@1.0.1
+#         with: 
+#           package-name: ${{ steps.publish-action.outputs.package-name }}
