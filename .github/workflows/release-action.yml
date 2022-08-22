@@ -10,6 +10,10 @@ jobs:
     steps:
       - name: Checking out!
         uses: actions/checkout@v3
+        
+      - name: Github events data
+        run: |
+          echo ${{ github.event }}
   
    
       - name: Running action   
